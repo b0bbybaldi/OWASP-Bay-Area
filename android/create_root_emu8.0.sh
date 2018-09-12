@@ -11,12 +11,12 @@ adb push busybox /data/busybox
 # adb shell "mount -o remount,rw /system && mv /data/busybox /system/bin/busybox && chmod 755 /system/bin/busybox && /system/bin/busybox --install /system/bin"
 adb shell chmod 755 /data/busybox
 adb shell 'sh -c "./data/busybox --install /data"'
-adb shell 'sh -c "mkdir /sdcard/xposed"'
-adb push xposed8.zip /sdcard/xposed/xposed.zip
-adb shell chmod 0755 /sdcard/xposed
-adb shell 'sh -c "./data/unzip /sdcard/xposed/xposed.zip -d /sdcard/xposed/"'
-adb shell 'sh -c "cp /sdcard/xposed/xposed/META-INF/com/google/android/*.* /sdcard/xposed/xposed/"'
-echo "Now start the su ./sdcard/xposed/xposed/Flash-Script.sh as ADB shell after installing SUperSU"
+adb shell 'sh -c "mkdir /data/xposed"'
+adb push xposed8.zip /data/xposed/xposed.zip
+adb shell chmod 0755 /data/xposed
+adb shell 'sh -c "./data/unzip /data/xposed/xposed.zip -d /data/xposed/"'
+adb shell 'sh -c "cp /data/xposed/xposed/META-INF/com/google/android/*.* /data/xposed/xposed/"'
+echo "Now start the su ./data/xposed/xposed/Flash-Script.sh as ADB shell after installing SUperSU"
 echo "Next, restart emulator"
 echo "Next, adb install XposedInstaller_3.1.5.apk"
 echo "Next, run installer and then adb reboot"
