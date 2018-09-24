@@ -7,7 +7,7 @@ Required files can be found in this repository: <https://github.com/0xFireball/r
 
 You need the Android SDK and fresh new AVD. For this guide we will call it `RootAVD`.
 
-This was written and tested on a Nexus 5X AVD running Android 7.1 Nougat on an Ubuntu Linux host.
+This was written and tested on a Nexus 5X AVD running Android 7.1.1 (API Level 25) Nougat on an Ubuntu Linux host.
 This method _should_ work with a similar setup (Android Nougat) for the forseeable future, though
 future Android versions may complicate this process further.
 
