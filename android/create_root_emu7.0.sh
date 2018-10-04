@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "This script is based on http://www.andnixsh.com/2018/06/how-to-install-xposed-on-any-android.html"
-echo "Start your emulator with 'emulator -avd NAMEOFX86A7.0 -writable-system -selinux disabled -wipe-data'"
+echo "Start your emulator with 'emulator -avd NAMEOFX86A7.0 -writable-system -selinux permissive -wipe-data'"
 adb root && adb remount
 adb install SuperSU\ v2.79.apk
 adb push root_avd-master/SuperSU/x86/su /system/xbin/su
@@ -17,8 +17,8 @@ adb push xposed7.zip /data/xposed/xposed.zip
 adb shell chmod 0755 /data/xposed
 adb shell 'sh -c "./data/unzip /data/xposed/xposed.zip -d /data/xposed/"'
 adb shell 'sh -c "cp /data/xposed/xposed/META-INF/com/google/android/*.* /data/xposed/xposed/"'
-echo "Now start the su ./data/xposed/xposed/flash-script.sh as ADB shell after installing SUperSU"
+echo "Now adb shell and do 'su', next: go to ./data/xposed/xposed, make flash-script.sh executable and run it in that directory after running SUperSU"
 echo "Next, restart emulator"
 echo "Next, adb install XposedInstaller_3.1.5.apk"
 echo "Next, run installer and then adb reboot"
-# adb shell 'sh -c "su ./sdcard/xposed/xposed/Flash-Script.sh"'
+echo "Want to use it again? Start your emulator with 'emulator -avd NAMEOFX86A7.0 -writable-system -selinux permissive'"'
