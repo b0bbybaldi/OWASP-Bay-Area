@@ -20,4 +20,5 @@ echo "Now start the su ./data/xposed/xposed/Flash-Script.sh as ADB shell after i
 echo "Next, restart emulator"
 echo "Next, adb install XposedInstaller_3.1.5.apk"
 echo "Next, run installer and then adb reboot"
+echo "Want to use it again? Start your emulator with 'emulator -avd NAMEOFX86A8.0 -writable-system -selinux permissive'"
 # adb shell 'sh -c "su ./sdcard/xposed/xposed/Flash-Script.sh"'
