@@ -6,6 +6,10 @@ You can find the presentation at [Google Docs](https://docs.google.com/presentat
 
 
 ## Preparation
+
+**Please dowlnoad our PPTX with detailed instructions on how to setup everything:**
+https://github.com/sushi2k/OWASP-Bay-Area/blob/master/Preparation-Bay-Area-Workshop.pptx
+
 In order to be able to participate, we recommend that you:
 - Install docker on your laptop
 - Have Python 3 and pip3 (Todo: Install instructions) installed on your laptop when running MacOS X
@@ -13,7 +17,7 @@ In order to be able to participate, we recommend that you:
 - Install android 7 and Android 8 emulators (see android folder)
 - Install objection and BurpSuite (community edition)
 
-Please dowlnoad our PPTX with detailed instructions on how to setup everything: https://github.com/sushi2k/OWASP-Bay-Area/blob/master/Preparation-Bay-Area-Workshop.pptx
+
 
 ## Android
 
